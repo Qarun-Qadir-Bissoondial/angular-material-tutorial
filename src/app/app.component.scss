@@ -1,5 +1,8 @@
-h1 {
+:host {
     text-align: center;
+}
+
+h1 {
     padding: 20px;
 }
 
@@ -10,4 +13,8 @@ button {
     border-radius: 8px;
     display: block;
     margin: 10px auto;
+}
+
+main {
+    padding: 0 10vw;
 }

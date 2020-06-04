@@ -1,7 +1,14 @@
 <h1>Angular-Material-Tutorial</h1>
+<h2>Templating Reference Example</h2>
 
 <app-counter #counter></app-counter>
 
 <button (click) = 'counter.increment()'>Add number</button>
-<button (click) = 'counter.show()'>Show Counter</button>
-<button (click) = 'counter.hide()'>Hide Counter</button>
+<button *ngIf = '!counter.showNumber' (click) = 'counter.show()'>Show Counter</button>
+<button *ngIf = 'counter.showNumber' (click) = 'counter.hide()'>Hide Counter</button>
+
+<hr>
+
+<main>
+    <router-outlet></router-outlet>
+</main>

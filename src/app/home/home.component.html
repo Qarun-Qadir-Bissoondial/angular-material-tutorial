@@ -1,0 +1,10 @@
+<h2>Angular Material Components</h2>
+<main>
+    <div 
+        class="title"
+        *ngFor = 'let section of sections'
+        [routerLink] = 'section.link' >
+    
+            <span>{{section.title}}</span>
+    </div>
+</main>
